@@ -1,0 +1,258 @@
+/* Body styling */
+body { 
+    background-color: hsl(202, 86%, 94%);
+} 
+
+/*Done*/
+
+/*card styling*/
+.contents { 
+    background-color: hsl(202, 86%, 94%);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 2em;
+}
+.inputs { 
+    background-color: white; 
+   padding: 20px 30px;
+   border-radius: 20px;
+   font-family: 'Plus Jakarta Sans';
+}
+
+.result { 
+    background-color: hsl(202, 55%, 16%);
+    padding: 70px 40px; 
+    border-radius: 0 20px 20px 20px;
+    color: white; 
+    max-width: 300px;
+    min-height: 100%;
+    font-family: 'Plus Jakarta Sans';
+}
+/*Done*/
+
+/*Input Contents*/
+.heads { 
+    display: flex; 
+    justify-content: space-between;
+} 
+
+.termandrates { 
+    display: flex; 
+}
+
+.terms-input { 
+    display: flex; 
+} 
+
+.mortageamount { 
+   display: flex;
+} 
+
+.term { 
+    padding: 5px;
+} 
+
+.rates { 
+    padding: 5px;
+}
+
+#mortageAmount { 
+    border-left: none; 
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px; 
+    width: 300px;
+}
+
+#Term { 
+    border-left:  1px solid black; 
+    border-top: 1px solid black;
+    border-right: none;
+    border-bottom: 1px solid black; 
+    border-top-left-radius: 3px; 
+    border-bottom-left-radius: 3px; 
+    width: 90px;
+}
+
+span { 
+    background-color: hsl(202, 86%, 94%); 
+    padding: 10px; 
+    border-left: 1px solid black; 
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-left-radius: 3px; 
+    border-bottom-left-radius: 3px;
+}
+
+.right-span-term { 
+    background-color: hsl(202, 86%, 94%); 
+    padding: 10px; 
+    border-right: 1px solid black; 
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-right-radius: 3px; 
+    border-top-left-radius: none; 
+    border-bottom-left-radius: none;
+    border-left: none;
+    border-bottom-right-radius: 3px; 
+    color: black; 
+}
+
+.right-span-rate { 
+    background-color: hsl(202, 86%, 94%); 
+    padding: 10px; 
+    border-right: 1px solid black; 
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-right-radius: 3px; 
+    border-top-left-radius: none; 
+    border-bottom-left-radius: none;
+    border-left: none;
+    border-bottom-right-radius: 3px;
+}
+
+.interest-rates { 
+    display: flex; 
+}
+
+#rate { 
+    border-left:  1px solid black; 
+    border-top: 1px solid black;
+    border-right: none;
+    border-bottom: 1px solid black; 
+    border-top-left-radius: 3px; 
+    border-bottom-left-radius: 3px; 
+    padding: 5px; 
+    width: 90px;
+}
+
+#repayment { 
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.repayment { 
+    border: 1px solid black; 
+    padding: 10px; 
+    border-radius: 5px; 
+
+}
+
+.interest { 
+    border: 1px solid black; 
+    padding: 10px; 
+    border-radius: 5px; 
+    
+}
+
+/*not done yet*/
+
+/*button*/ 
+button { 
+    padding:  10px 30px; 
+    border-radius: 20px; 
+    border: none; 
+    background-color: hsl(61, 70%, 52%); 
+    font-size: 13px;
+    width: 250px;
+}
+
+button > img { 
+    padding: 0; 
+} 
+
+.button-text { 
+    border: none; 
+    background-color: transparent; 
+    padding: 0; 
+    color: hsl(202, 55%, 16%); 
+    font-weight: bold;
+} 
+/*nearly done*/
+
+/*results*/
+.description { 
+    opacity: 0.5; 
+    padding-left: 20px;
+    height: auto;
+} 
+
+.description-results { 
+    opacity: 0.5; 
+    display: none;
+}
+
+.description-total-results { 
+    opacity: 0.5; 
+    display: none;
+}
+
+hr { 
+    color: grey;
+}
+
+.results { 
+    border-top: hsl(61, 70%, 52%) 5px solid;
+    border-radius: 10px; 
+    background-color: hsl(202, 55%, 13%);
+    display: none;
+}  
+
+.result > h3, .description { 
+    display: none;
+}
+
+.emptyimage { 
+    display: block;
+}
+
+.emptyimage > p { 
+    opacity: 0.5;
+} 
+
+.results-shower { 
+    color: hsl(61, 100%, 74%);
+    padding: 5px;
+    font-size: 25px;
+} 
+
+.result-holder { 
+    padding: 5px;
+    font-size: 20px;
+}
+
+/*Done*/
+
+/*Hover States*/
+.clearall:hover { 
+    color: hsl(202, 55%, 13%); 
+    text-decoration: underline; 
+    text-decoration-color: hsl(202, 55%, 13%);
+}
+
+.repayment:hover { 
+    border-color: hsl(61, 70%, 52%);
+}
+
+.interest:hover { 
+    border-color: hsl(61, 70%, 52%);
+} 
+
+button:hover { 
+    background-color: hsl(61, 100%, 74%);
+}
+/*Done*/
+
+/*media*/
+@media screen and (max-width: 768px) {
+    .contents { 
+        display: block; 
+    }
+
+    .result { 
+        max-width: 100%;
+    }
+}

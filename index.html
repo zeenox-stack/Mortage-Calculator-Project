@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+<link rel="stylesheet" href="mortagecalculator.css">
+  
+</head>
+<body>
+  <section class="contents">
+  <section class="inputs"> 
+    <div class="heads">
+       <h3>Mortgage calculator</h3> 
+       <p class="clearall">Clear All</p>
+    </div>
+    <main class="input-area"> 
+      <form> 
+        <label for="mortageAmount">Mortgage Amount
+        </label> 
+        <br> 
+        <div class="mortageamount"> 
+          <span class="principle">€</span>
+        <input type="number" name="mortageAmount" id="mortageAmount">
+        <p class="error-principle"></p>
+        </div> 
+        <br> 
+        <br> 
+        <div class="termandrates"> 
+           <div class="term">
+             <label for="Term"> 
+             Mortgage Term
+             </label> 
+             <br> 
+             <div class="wrapped-contents">
+               <div class="terms-input"> 
+                 <input type="text" name="Term" id="Term">
+                 <span class="right-span-term">Years</span>
+               </div>  
+               <p class="error-term"></p>
+             </div>
+           </div> 
+           <br> 
+           <div class="rates"> 
+             <label for="rate"> 
+               Interest Rates
+             </label>
+             <br> 
+            <div class="wrapped-contents">
+              <div class="interest-rates"> 
+              <input type="number" name="rate" id="rate">
+              <span class="right-span-rate">%</span>
+             </div>
+             <p class="error-rate"></p>
+            </div>
+           </div>
+         </div> 
+         <br>
+         <div class="type"> 
+            <label for="repayment">Mortage Type</label>
+            <section class="repayment"> 
+             <input type="radio" name="repayment" value="1" id="repayment"> 
+             <label for="repayment">Repayment</label>
+            </section> 
+            <br> 
+            <section class="interest"> 
+             <input type="radio" name="repayment" value="2" id="interest"> 
+             <label for="interest">Interest Only</label>
+            </section> 
+            <p class="error-modes"></p>
+         </div> 
+         <br>
+          <button class="submit"> <img src="icon-calculator.svg" alt="calculator image"><span class="button-text"> Calculate Repayments</span></button>
+       </form>
+     </main>
+   </section>
+   <section class="result"> 
+     <h3 class="result-head">Your Results</h3> 
+     <p class="description"> Your results are shown below 
+       based on the information you provided.
+       To adjust the results, edit the form 
+       and click “calculate repayments” again.
+     </p>
+     <br>
+     <div class="results"> 
+       <p class="description-results">Your monthly repayments</p>
+       <br> 
+       <div> 
+         <p class="results-shower"></p>
+       </div>
+       <hr> 
+         <p class="description-total-results">
+           Total you'll pay over the term
+         </p>
+         <br> 
+        <div class="totalresults"> 
+          <p class="result-holder"></p>
+        </div>
+     </div>
+     <div class="emptyimage"> 
+       <img src="illustration-empty.svg" alt="empty image">
+        <h4>Results Shown Here</h4>
+        <p>Complete the form and click “calculate repayments” to see what 
+         your monthly repayments would be.</p>
+     </div>
+   </section>
+  </section>
+  <script src="mortagecalculator.js"></script>
+</body>
+</html>
